@@ -158,7 +158,6 @@ docker run -d \
 
 # 4. Wait ~10 seconds for Postgres to initialize, then verify
 curl -fsS http://localhost:3000/health   # expected: {"status":"ok"}
-curl -fsS http://localhost:3000/tasks    # expected: JSON array with seed task
 
 # 5. Clean up when done
 docker rm -f peer-app peer-db
